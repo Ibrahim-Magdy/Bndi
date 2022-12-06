@@ -1,0 +1,255 @@
+:root{
+    --dark-cololr:#19283f;
+    --green-color:#33D1CC;
+    --red-color:#FF3150;
+    --yellow-color:#FFC400;
+    --section-color:#EFF7FA;
+    --white-color:#EFF7FA;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto' , sans-serif;
+}
+
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.main-btn:hover{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.main-title::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar{
+    background-color: var(--dark-cololr);
+}
+
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+
+.search{
+    border-left: 1px solid var(--green-color);
+}
+
+.search svg{
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+
+.landing{
+    background-color: var(--dark-cololr);
+    min-height: calc(100vh );
+}
+
+.features .icon-holder{
+    height: 200px;
+}
+
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon{
+    color: var(--green-color);
+}
+
+.features .feat h4{
+    color: var(--yellow-color);
+}
+
+.more{
+    background-color: var(--white-color);
+}
+
+.team{
+    background-color: var(--white-color);
+}
+
+.team-h2{
+    color:var(--yellow-color);
+}
+
+.luke  h4{
+    background-color: var(--green-color);
+}
+
+.start{
+    background-color: var(--dark-cololr);
+}
+
+.subscribe{
+    background-color: var(--yellow-color);
+}
+
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.subscribe input[type="text"]:focus{
+    outline: none;
+}
+
+.subscribe ::placeholder{
+    color: white;
+}
+
+.subscribe input[type="submit"] {
+   background-color: var(--dark-cololr);
+   color: var(--yellow-color);
+}
+
+.footer{
+    background-color: var(--dark-cololr);
+}
+
+.footer .copyright > span{
+    color: var(--green-color);
+}
+
+.footer .copyright div span{
+    color: var(--yellow-color);
+}
+
+.footer .contact ul svg{
+    width: 20px;
+    height: 20px;
+}
+
+.footer .facebook{
+    background-color:#1877f2;
+}
+
+.footer .twitter{
+    background-color:#1da1f2 ;
+}
+
+.footer .linkedin{
+    background-color:#0077b5 ;
+}
+
+.footer .youtube{
+    background-color:#ff0000 ;
+}
+
+
+/* MODAL WINDOW */
+.hags {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60rem;
+    color: white;
+    padding: 5rem 6rem;
+    box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.5s;
+  }
+
+  .hags1{
+    color: white;
+    grid-column: 1 / span 2;
+    margin-top: 7px;
+    border: solid 1px white;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    transition: all 0.5s;
+  }
+  
+  .modal__header {
+    font-size: 3.25rem;
+    margin-bottom: 4.5rem;
+    line-height: 1.5;
+  }
+  
+  .modal__form {
+    margin: 0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  
+  .modal__form label {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  
+  .modal__form input {
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+  }
+  
+  /* .modal__form button {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    margin-top: 1rem;
+  } */
+  
+  .btn--close-modal {
+    font-family: inherit;
+    color: inherit;
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
